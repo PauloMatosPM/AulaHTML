@@ -1,0 +1,22 @@
+.barra{
+    background-color: blue;
+}
+.carrossel{ 
+    width: 50%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto
+}
+.pinturas{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+
+
+}
+
+.card {
+    display: flex !important;
+    flex-direction: column !important;
+    
+}

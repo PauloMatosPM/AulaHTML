@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        p.vermelho{
+            color: red;
+        }
+        *{
+            text-align: center;
+        }
+        div ~ p{
+            color: rgb(255, 100, 80);
+        }
+        div p{
+            display: none;
+        }
+
+        div{
+            background-color: aquamarine;
+            color: black;
+            padding: 25px;
+        }
+        div:hover{
+            background-color: violet;
+        }
+        div:hover p{
+            display:block;
+        }
+
+        a:link{
+            color:purple;
+            
+        }
+        a.destaque:hover{
+            color: red;
+            font-size: 50px;
+
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <h1 class="vermelho">asjkbdjaksdbasbdkj</h1>
+    <p class="vermelho">aajkdajsdbkasjdbasjdbka</p>
+    <p class="vermelho">adajksbdkjasdkjasjdkabsdj</p>
+    <hr>
+    <div>
+        <p>ajsbkjsbfkjasbfkjasjbfksajbfksa</p>
+        <p>aafjbsjfbkjasbkfjbasjfkjabsjkfbksajbfkasb</p>
+        <p>akjsfasfkjbaskjbfkjsafbksajfkjbasfjaskfjbasjfkasbf</p>
+        <section>
+            <p>akjsbdkjasbdkjabskjdkasjbdkasjbdkjasbkfjasjbsafjkasb</p>
+        </section>
+    </div>
+    <p>afsafvasvfjvsajfjasvfjasjfvjasfjasv</p>
+    <code>asdfasbdkajsbdjkabskdaspfpqowihriqhwoirhqowirytq</code>
+    <p>jafjkfbkjabsfkasfbkajsbfkjasbfkjsabkfasbkfjbsakjfbas</p>
+<hr>
+    <a href="#" class="destaque">Clique em mim</a>
+    <a href="#">Esse não tem destaque</a>
+   
+   
+   
+    <p>sajfajsbfabskfjbaskjfb</p>
+    <div>Passe o mouse</div>
+
+
+
+
+
+
+
+</body>
+</html>

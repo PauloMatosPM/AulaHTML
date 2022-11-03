@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do artista</title>
+    <link href="gal.menu.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .flex-container {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2vw;
+            padding: 1vw;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 2px solid black;
+            width: 50%;
+            background-color: rgb(212, 212, 212);
+            left: 30px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        img {
+            border: 2px solid black;
+        }
+
+        .container {
+            float: right;
+            position: relative;
+            right: 300px;
+            top: 15px;
+        }
+
+        body {
+            background-color: rgb(73, 73, 73);
+        }
+
+        h3 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .material-symbols-outlined {
+            color: white;
+            float: right;
+            top: 15px;
+            cursor: pointer;
+        }
+
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="cabecalho" style="display: flex; flex-direction:column; background-color: #333333;">
+
+        <div style="display:flex; justify-content:space-between; align-items:center; ">
+
+            <div>
+                <img src="virtual_gallery.png" width="100px" height="100px" style="float: left;">
+            </div>
+
+            <div style="justify-self: flex-start; width:100%;">
+                <ul>
+                    <li><a href="gal_index.html">Home</a></li>
+                    <li><a href="gal_com.html">Comprar</a></li>
+                    <li><a href="gal_cad.html">Cadastro</a></li>
+                    <li><a href="gal_aa.html" class="ativa">Área do artista</a></li>
+                </ul>
+
+            </div>
+
+            <div class="busca" style="display: flex; align-items:center">
+                <input type="text" id="txtBusca" placeholder="Buscar..." />
+                <button id="btnBusca">Buscar</button>
+                <span class="material-symbols-outlined">
+                    login
+                </span>
+            </div>
+
+        </div>
+
+        <div style="display:flex; justify-content:center">
+            <ul>
+                <li><a href="#" class="ativa">Escultura</a></li>
+                <li><a href="#">Pintura</a></li>
+                <li><a href="#">Fotografia</a></li>
+                <li><a href="#">Arte Digital</a></li>
+
+            </ul>
+        </div>
+        </div>
+        <br>
+
+        <div class="conteudo">
+        <h1 style="color:white ; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Nome do artista</h1>    
+            <div class="flex-container">
+                <img src="pessoa.jpg" width="50%" height="50%">
+            </div>
+            <p>
+            <div class="flex-container">
+                <h3 style="color:black ;">Descrição do artista</h3>
+                <p> Lucas ipsum dolor sit amet mara wampa obi-wan mace jade ahsoka moff hutt amidala chewbacca. Darth
+                    tusken
+                    raider
+                    boba mon sidious mon windu solo. Palpatine kenobi calrissian skywalker skywalker skywalker solo
+                    wampa
+                    antilles.
+                    Jinn fisto droid solo bothan hutt. Thrawn hutt organa solo.
+                    Jabba hoth mon sith ackbar dagobah grievous skywalker. Hutt skywalker padmé luke.
+                    Jinn skywalker mon gamorrean organa padmé darth skywalker moff. Calrissian dooku grievous padmé
+                    binks. Jango
+                    fisto solo antilles binks solo.
+
+                    Hutt antilles fett mustafar palpatine fett darth. Darth vader jawa fisto ackbar calrissian binks
+                    solo. Wampa
+                    endor antilles han jabba sebulba kessel boba.
+                    Ewok antilles wedge maul sebulba dagobah jar darth. Darth kamino palpatine mace. Fisto kessel thrawn
+                    dooku.
+                    Vader skywalker qui-gonn leia hutt darth amidala. Yoda calamari moff kit mon mace kenobi. Amidala
+                    kamino
+                    jango
+                    tatooine.
+                    Zabrak maul windu fett. Sidious hutt qui-gonn coruscant dagobah fisto moff twi'lek. Lars jade
+                    calamari
+                    ackbar
+                    jar binks. </p>
+            </div>
+        </div>
+        <h3>
+            Trabalhos
+        </h3>
+        <div
+            style=" align-items: center; display: flex; flex-wrap: wrap; justify-content: center; gap: 2vw; padding: 1vw; border: 2px solid black;  width: 50%; background-color: rgb(212, 212, 212); left: 30px; margin-left: auto; margin-right: auto;">
+            <img src="passaro.jpg">
+            <img src="forca.jpg">
+            <img src="moca.jpg">
+        </div>
+    </div>
+</body>
+
+</html>

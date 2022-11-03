@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+<style>
+    .relativa{
+        position: relative;
+        left: 30px;
+        border: 1px solid red;
+        width: 400px;
+        height: 200px;
+    }
+    .fixada{
+        position: fixed;
+        border: 1px solid red;
+        top: 0;
+        right: 0;
+    }
+    
+    .absoluta{
+        position: absolute;
+        border: 1px solid rgb(11, 253, 32);
+        top: 50%;
+        right: 0;
+    }
+    
+    .grudento{
+        position: sticky;
+        border: 1px solid rgb(126, 0, 126);
+        top: 0;
+    }
+    #icarus{
+        float: right;
+    }
+   
+    .clearfix::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .div1{
+        float: left;
+        border: 1px solid tomato;
+    }
+    .div2{
+        border: 1px solid rgb(71, 255, 111);
+    }
+    .div3{
+        float: right;
+        border: 1px solid tomato;
+    }
+    .div4{
+        clear: right;
+        border: 1px solid lawngreen;
+    }
+    .sem_box{
+        border: 5px solid black;
+        width: 200px;
+    }
+    .com_box{
+        border: 5px solid black;
+        width: 200px;
+        box-sizing: border-box;
+        /* box-sizing:content-box;*/
+    }
+    .img-container{
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+    .clearfix::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    *{
+        box-sizing: border-box;
+    }
+     .cont_flex{
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: antiquewhite;
+     }
+
+     .cont_flex .box{
+        background-color: aquamarine;
+        width: 50%;
+        border: 1px solid black;
+        text-align: center;
+        line-height: 60px;
+     }
+     #centralizado{
+        display: block;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0.5;
+     }
+     #centralizado:hover{
+        opacity: 1;
+     }
+</style>
+
+
+
+
+</head>
+<body>
+    <div class="relativa">
+        afjkasbfkjsabfjksabfkjasbfjksabfkasbfkjbrjabraksjb
+        <div class="absoluta">
+            Qualquer coisa
+        </div>
+    </div>
+    
+    <div class="fixada">
+        IIIIRRRRAAAAAA!
+    </div>
+
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p class="grudento">fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <p>fajfasjkfkjasbfjkasfbskafjbsakjfbksajbfkjabsfkbsakfj
+    </p>
+    <hr>
+    
+    <p class="clearfix"style="border: 1px solid black;"> <img src="icarus.jpg" alt="icarus" style="width:170px; height: 170px;">
+       
+        Lucas ipsum dolor sit amet sith jade boba kamino grievous obi-wan greedo dooku jabba endor. Darth hutt skywalker gamorrean moff kamino darth. 
+        Bothan ben organa skywalker dooku. Fett dagobah wampa solo solo ben. Fett hutt c-3po yavin calrissian jar ventress. Darth dooku jinn r2-d2 dooku. 
+        Dantooine darth fett grievous kessel. Dooku organa ben ben jabba. Endor solo yoda hoth skywalker lobot luke ahsoka obi-wan. Ackbar hutt darth kenobi solo. 
+        Skywalker calamari naboo ponda bespin sidious mara skywalker zabrak. </p>
+        <hr>
+        <div class="div1">div sem clear</div>
+        <div class="div2">safvajshvfhasvfjhsvjfhvasjfvjsafvjsavhjsavf</div>
+        <br> <br>
+        <div class="div3">div com clear</div>
+        <div class="div4">ajsfjkabsjfkbaskfbajksfkasbfkajsbfkjabsfkjasbfkb</div>
+        <br>
+        <div class="sem_box">fjasjfasjfajsfbsajfasbj</div>
+        <br>
+        <div class="com_box">afsfasjfasfasgjfgsfgf</div>
+        <hr>
+        <div class="clearfix">
+      <div class="img-container">
+        <img src="icarus.jpg" width="100%"></div>  
+      <div class="img-container">
+        <img src="icarus.jpg" width="100%"></div>  
+      <div class="img-container">
+        <img src="icarus.jpg" width="100%"></div>  
+        </div>
+        <hr>
+        <div class="cont_flex">
+            <div class="box">
+                    fksafajsfjkasjfbasjfbsajkfasbfbajsfbjbaksfbsajfbjasjgrsarasurguasgrugasuriasgriugsaiurguiasgruiasgruiasgruiasgruigasuirguiasgruigsuirgasuigriuasgiruavshvfhasvhfvhasvfhavsfkvaskfvaskfvaksjfvkajsfjk
+            </div>
+
+            <div class="box">
+                safhvafhvjahasvfhvsfhvs
+            </div>
+        </div>
+        <hr>
+        <img id="centralizado"src="Dream.jpg">
+        </hr>
+</body>
+</html>

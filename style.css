@@ -1,0 +1,44 @@
+p:first-child{
+    color:blue
+}
+p i:first-child{
+    color: rgb(214, 25, 25);
+}
+
+p:first-child i{
+    font-size: 30px;
+}
+q:lang(no){
+    quotes: "~" "~";
+}
+
+p::first-line{
+    color:hotpink;
+    font-variant:small-caps;
+}
+
+p::first-letter{
+    font-size: xx-large;
+}
+
+h1::before{
+    content: url(icarus.jpg);
+}
+
+h1::after{
+    content:url(icarus.jpg) ;
+}
+::marker{
+    color: rgb(101, 255, 139);
+}
+::selection{
+    color: red;
+    background-color: yellow;
+}
+
+a[target="_blank"] { 
+    background-color: rgb(0, 153, 255);
+}
+[title*=f]{
+    border: 5px solid red;
+}

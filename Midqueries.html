@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste midia queries</title>
+<style>
+    .city{
+        background-color: tomato;
+        color: white;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    #myHeader{
+        background-color: lightblue;
+        color: black;
+        padding:40px;
+        text-align:center;
+    }
+    
+    
+    
+    *
+    {
+        box-sizing: border-box;
+    }
+    .left{
+        background-color: rgb(142, 5, 206);
+        padding: 20px;
+        float: left;
+        width: 20%; /* a largura é 20% por padrão*/
+    }
+    .main{
+background-color: rgb(43, 189, 226);
+padding: 20px;
+float: left;
+width:60%; /* a largura é de 60% por padrão*/
+    }
+    .right{
+        background-color: azure;
+        padding:20px;
+        float:left;
+        width:20%;/* largura é 20% por padrão*/
+    }
+    /* use a media query para adicionar um ponto de quebra 800px:*/
+    @media screen and (max-width:  800px) {
+.left,.main,.right{
+    width:100%; /*the largura é 100%, quando a tela tem 800px ou menos*/
+}
+    }
+</style>
+</head>
+<body>
+    <h1 id="myHeader">Rock n roll</h1>
+    <div class="left">
+        <o>Menu esquerdo</o>
+    </div>
+    <div class="main">
+        <p>principal</p>
+    </div>
+    <div class="right">
+        <p>direito</p>
+    </div>
+
+    <div style="background-color:black;color:white;padding:20px"><h2> Star ipsum</h2>
+        <p>Lucas ipsum dolor sit amet <span style="color:blue; font-weight: bold;">C-3p0 qui-gon jade hutt. Lars hutt windu moff fett moff hutt kenobi.</span> calrissian skywalker calrissian mon leia darth moff mandalore binks jade. Yavin antilles sidious darth skywalker c-3po mon. Hutt kamino windu skywalker hutt sith. Kenobi droid organa ponda. Yavin yoda maul watto moff yavin chewbacca. Hutt lobot darth yavin c-3po darth luke wedge. Han boba ben dantooine maul kashyyyk lando jango qui-gonn. Mustafar secura twi'lek qui-gon maul kenobi sebulba maul. Droid organa endor moff mace antilles bespin. Darth utapau chewbacca mara utapau endor darth kessel.</p>
+        <p>C-3p0 qui-gon jade hutt. Lars hutt windu moff fett moff hutt kenobi. Skywalker jinn kenobi mandalorians windu. Kessel hutt skywalker sebulba palpatine kashyyyk. Solo kenobi thrawn solo thrawn sith. Yoda coruscant solo chewbacca kashyyyk lars. Sith darth darth antilles. Darth skywalker leia calrissian. C-3po aayla amidala jar endor boba dantooine skywalker leia. Lobot skywalker gamorrean darth moff padmé kessel. Mara jabba wampa yoda mace. Darth lando mothma moff windu skywalker. Darth grievous r2-d2 alderaan luke.</div>
+    </p>
+
+<div class="city main">
+    <h2>London</h2>
+    <p>London is the capital od England</p>
+</div>
+<div class="city">
+    <h2>Paris</h2>
+<p>Paris is the capital of France</p>
+</div>
+<div class="city">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan</p>
+</div>
+
+
+
+
+</body>
+</html>
